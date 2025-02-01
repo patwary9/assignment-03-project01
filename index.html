@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet & vet</title>
+    <!-- google-font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sora:wght@100..800&display=swap" rel="stylesheet">    
+    <!-- daisy ui & tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0e9c20e737.js" crossorigin="anonymous"></script>
+    <!-- customize tailwind css -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        .lilita-font{
+            font-family: "Lilita One", serif;
+
+        }
+        .sora-font{
+            font-family: "Sora", serif;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- header section  -->
+<header>
+<nav class="bg-[#FFE7D3]">
+    <div class="flex justify-between lg:flex lg:flex-wrap sora-font   mx-auto lg:px-18 px-7 lg:justify-around items-center">
+        <!-- logo & name -->
+        <div class="lg:flex lg:flex-wrap items-center">
+        <img class="w-12" src="c1-assets/logo-header.png" alt="">
+        <div>
+        <h3 class="hidden lg:inline-block lg:text-2xl font-semibold lg:my-5">Pet <span class="text-amber-500">&</span> vet</h3>
+        </div>
+        </div>
+        <!-- nav item  -->
+         <div class="hidden lg:inline-block  lg:my-5">
+            <ul class="lg:flex lg:flex-wrap items-center lg:text-xl font-medium gap-4">
+                <li> Find pet.vet</li>
+                <li>Breeds</li>
+                <li>Contact us</li>
+            </ul>
+         </div>
+        <!-- nav last item  -->
+         <div class="hidden lg:inline-block lg:flex lg:flex-wrap lg:my-5 items-center gap-4">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="btn btn-outline btn-warning ">login</button>
+            <button class="btn btn-warning">Register</button>
+         </div>
+        <!-- responsive menu bar -->
+        <div class="flex-none inline-block lg:hidden">
+            <button class="btn btn-square btn-ghost">
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-5 w-5 stroke-current">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+        </div>
+    </div>
+    <div class=" lg:hidden border-b-2 border-black ..."></div>
+
+</nav>
+</header>
+</body>
+</html>
